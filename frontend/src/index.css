@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom styles */
+body {
+  background-color: #fdfdfd; /* Light gray background */
+}
+
+h1 {
+  color: #516fc2; /* Dark blue */
+  text-align: center;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
