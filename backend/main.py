@@ -40,7 +40,7 @@ async def get_call_details(phone_number: str):
 
 
 # Retell AI Configuration
-RETELL_API_KEY = "key_f4ee0732ce5b834666c2957b8f1e"
+RETELL_API_KEY = "___key___"
 retell_client = Retell(api_key=RETELL_API_KEY)
 
 class Contact(BaseModel):
@@ -79,7 +79,7 @@ def process_call_queue():
             continue
         
         response = retell_client.call.create_phone_call(
-            from_number="+18454566808",
+            from_number=" here is you pvt number ",
             to_number=phone_number
             
         )
