@@ -157,7 +157,7 @@ async def process_call_sequence(phone_number: str, doc_id: str, index: int, tota
     try:
         # Wait if not first call
         if index > 0:
-            await asyncio.sleep(60)  # 1 minute delay between calls
+            await asyncio.sleep(300)  # 1 minute delay between calls
             
         response = await make_call_async(phone_number)
         call_id = response.call_id
