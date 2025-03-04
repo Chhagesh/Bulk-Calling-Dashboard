@@ -54,7 +54,7 @@ async def make_call_async(phone_number):
     try:
         response = await asyncio.to_thread(
             retell_client.call.create_phone_call,
-            from_number="+18454566808",
+            from_number=" put the retail no here ",
             to_number=phone_number
         )
         print(f"Call initiated: {response}")
@@ -79,7 +79,7 @@ def process_call_queue():
             continue
         
         response = retell_client.call.create_phone_call(
-            from_number=" here is you pvt number ",
+            from_number=" here is your retail  number ",
             to_number=phone_number
             
         )
