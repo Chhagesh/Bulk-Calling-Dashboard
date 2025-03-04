@@ -259,6 +259,4 @@ async def update_call_details(call_id: str, response):
 
 
 
-scheduler = BackgroundScheduler()
-scheduler.add_job(process_call_queue, "interval", minutes=5)
-scheduler.start()
+
